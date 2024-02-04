@@ -1,0 +1,25 @@
+diff_type: "sde"
+init_unet_ckpt: "/home/user/data4/diffusion/DiffPure/vpsde/32x32_ckpt_8_diffusion.pth"
+other_config: "./configs/vp_sde_cifar10.yaml"    # including model, training recipe, etc.
+
+cls_version: "diffpure" 
+resnet_ckpt: "/home/user/data4/diffusion/DiffPure/WideResNet_70_16_dropout_cifar10.pth"
+tune_T: 0.2
+
+output_dir: "/home/user/data4/diffusion/defensediffusion/cifar10_sde/ft_fz_wcls/"
+
+dataset: "CIFAR10"
+centered: True
+
+
+advtrain: True
+
+log_freq: 100
+snapshot_freq: 5000
+total_iterations: 30000
+
+fix_t: True
+fix_z: True
+with_cls: True
+
+

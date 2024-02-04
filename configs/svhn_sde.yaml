@@ -1,0 +1,22 @@
+diff_type: "sde"
+init_unet_ckpt: ""
+other_config: "./configs/vp_sde_svhn.yaml"    # including model, training recipe, etc.
+tune_T: 1.0
+
+output_dir: "/home/user/data4/diffusion/defensediffusion/svhn_sde/score_sde/"
+
+dataset: "SVHN"
+centered: True
+
+
+advtrain: True
+
+log_freq: 100
+snapshot_freq: 5000
+total_iterations: 200000
+
+fix_t: False
+fix_z: False
+with_cls: False
+
+

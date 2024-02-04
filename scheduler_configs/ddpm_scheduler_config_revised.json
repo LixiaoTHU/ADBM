@@ -1,0 +1,11 @@
+{
+    "beta_end": 0.02,
+    "beta_schedule": "linear",
+    "beta_start": 1e-6,
+    "clip_sample": true,
+    "num_train_timesteps": 1000,
+    "trained_betas": null,
+    "variance_type": "fixed_large",
+    "timestep_spacing": "trailing",
+    "solver_order": 2
+  }

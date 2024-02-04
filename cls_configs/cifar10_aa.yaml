@@ -1,0 +1,15 @@
+cls_version: "diffpure"
+output_dir: "/home/user/data4/diffusion/DiffPure/cls_model/cifar10_aa"
+dataset: "CIFAR10"
+use_aa: True
+
+
+batch_size: 32
+ema_rate: 0.999
+lr: 0.1
+weight_decay: 1.0e-4
+total_epochs: 200
+
+other_config: ""
+unet_ckpt: ""
+init_unet_ckpt: ""

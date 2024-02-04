@@ -1,0 +1,25 @@
+diff_type: "sde"
+init_unet_ckpt: "/home/user/data4/diffusion/defensediffusion/svhn_sde/score_sde/checkpoint_200000.pth"
+other_config: "./configs/vp_sde_svhn.yaml"    # including model, training recipe, etc.
+
+cls_version: "diffpure_wrn-28-10"
+resnet_ckpt: "/home/user/data4/diffusion/DiffPure/cls_model/svhn_w28_aa/checkpoint_best.pth"
+tune_T: 0.2
+
+output_dir: "/home/user/data4/diffusion/defensediffusion/svhn_sde/ft_fz_wcls_w28/"
+
+dataset: "SVHN"
+centered: True
+
+
+advtrain: True
+
+log_freq: 100
+snapshot_freq: 5000
+total_iterations: 30000
+
+fix_t: True
+fix_z: True
+with_cls: True
+
+

@@ -101,7 +101,6 @@ def main():
         from autoattack import AutoAttack
         if args.rand:
             attacker = AutoAttack(defensediff, norm=args.attack_type, eps=epsilon[args.attack_type], version='rand')
-            attacker.attacks_to_run = ['apgd-ce']
         else:
             attacker = AutoAttack(defensediff, norm=args.attack_type, eps=epsilon[args.attack_type], version='standard')
 

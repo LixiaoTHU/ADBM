@@ -1,6 +1,6 @@
 # Adversarial Diffusion Bridge Model
 
-This is the code for the submission\_508 entitled Adversarial Diffusion Bridge Model for Reliable Adversarial Purification.
+This is the code for the submission\_2155 entitled Adversarial Diffusion Bridge Model for Reliable Adversarial Purification.
 
 Taking CIFAR-10 as an example, the following commands can be used to train and test the ADBM model.
 
@@ -9,7 +9,7 @@ Taking CIFAR-10 as an example, the following commands can be used to train and t
 accelerate launch --multi_gpu --num_processes 4 main.py --configs ft_fz_wcls_cifar10_sde.yaml
 ```
 
-### Test ADBM on CIFAR-10 with PGD-200 Linf attack (EOT and full gridient)
+### Test ADBM on CIFAR-10 with PGD-200 Linf attack (EOT and full gradient)
 ```bash
 python evaluate.py --gpu 4 \
                 --scheduler ddim \

@@ -1,6 +1,6 @@
 # Adversarial Diffusion Bridge Model
 
-This is the code for the submission\_2155 entitled Adversarial Diffusion Bridge Model for Reliable Adversarial Purification.
+This is the code for the submission entitled Adversarial Diffusion Bridge Model for Reliable Adversarial Purification.
 
 Taking CIFAR-10 as an example, the following commands can be used to train and test the ADBM model.
 

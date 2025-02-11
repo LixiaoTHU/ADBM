@@ -1,6 +1,6 @@
 # Adversarial Diffusion Bridge Model
 
-This is the code for the submission entitled Adversarial Diffusion Bridge Model for Reliable Adversarial Purification.
+This is the code for ADBM: Adversarial Diffusion Bridge Model for Reliable Adversarial Purification.
 
 Taking CIFAR-10 as an example, the following commands can be used to train and test the ADBM model.
 
@@ -29,3 +29,16 @@ python evaluate.py --gpu 4 \
 - CUDA 11.3
 - numpy
 - accelerate
+
+### Acknowledgement
+
+If you find that our work is helpful to you, please star this project and consider cite:
+
+```
+@inproceedings{li2024adbm,
+  author    = {Li, Xiao and Sun, Wenxuan and Chen, Huanran and Li, Qiongxiu and Liu, Yining and He, Yingzhe and Shi, Jie and Hu, Xiaolin},
+  title     = {ADBM: Adversarial diffusion bridge model for reliable adversarial purification},
+  booktitle = International Conference on Learning Representations (ICLR),
+  year      = {2025}
+}
+```

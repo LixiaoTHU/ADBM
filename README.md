@@ -5,7 +5,7 @@ This is the code for ADBM: Adversarial Diffusion Bridge Model for Reliable Adver
 Taking CIFAR-10 as an example, the following commands can be used to train and test the ADBM model.
 
 ### Training ADBM on CIFAR-10
-The required model ``32x32_ckpt_8_diffusion.pth'' can be downloaded from this (link)[https://drive.google.com/file/d/16_-Ahc6ImZV5ClUc0vM5Iivf8OJ1VSif/view] provided by the DiffPure repo.
+The required model ``32x32_ckpt_8_diffusion.pth'' can be downloaded from this [link](https://drive.google.com/file/d/16_-Ahc6ImZV5ClUc0vM5Iivf8OJ1VSif/view) provided by the DiffPure repo.
 
 ```bash
 accelerate launch --multi_gpu --num_processes 4 main.py --configs ft_fz_wcls_cifar10_sde.yaml
